@@ -1,0 +1,300 @@
+body {
+  background-color: #f4f4f4;
+  color: #38307a;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border: 2px solid #38307a;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #38307a;
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-box {
+  width: 70px;
+  height: 70px;
+  border: 3px solid #40c6fb;
+  border-radius: 50%;
+  color: #40c6fb;
+  font-size: 1.8em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+.tagline {
+  margin-top: 8px;
+  font-size: 1em;
+}
+
+.top-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.top-links a {
+  text-decoration: none;
+  border: 1px solid #999;
+  padding: 4px 8px;
+  color: #38307a;
+  font-size: 0.9em;
+}
+
+nav {
+  background-color: #ffffff;
+  border-bottom: 2px solid #38307a;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  border-right: 1px solid #38307a;
+}
+
+nav a {
+  display: block;
+  padding: 14px 22px;
+  text-decoration: none;
+  color: #38307a;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #40c6fb;
+  color: #ffffff;
+}
+
+#homehero {
+  height: 300px;
+  background-image: url("images/pickleball.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #38307a;
+  position: relative;
+}
+
+.hero-text {
+  position: static;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px 20px;
+  max-width: 450px;
+}
+
+.hero-text h2 {
+  margin: 0 0 10px 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 20px;
+}
+
+.card,
+.side-card {
+  border: 2px solid #38307a;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.card h2,
+.side-card h3 {
+  margin-top: 0;
+  border-bottom: 2px solid #d9d9d9;
+  padding-bottom: 8px;
+}
+
+.feature {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.feature img {
+  border: 2px solid #38307a;
+}
+
+.feature-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.button-row {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #38307a;
+  border: 2px solid #38307a;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #40c6fb;
+  color: #ffffff;
+}
+
+table {
+  border: 2px solid #38307a;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 0.75em;
+  border: 2px solid #38307a;
+  text-align: center;
+}
+
+th {
+  background-color: #fdde54;
+  color: #38307a;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #f8f8f8;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.news-item {
+  text-align: center;
+}
+
+.thumb,
+.video-box {
+  border: 2px solid #38307a;
+  background-color: #f2f2f2;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.video-box {
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+.side-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.side-list li {
+  margin-bottom: 10px;
+}
+
+footer {
+  font-size: 0.9em;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-top: 2px solid #38307a;
+}
+
+footer a {
+  color: #38307a;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #40c6fb;
+}
+
+@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    border-right: none;
+    border-bottom: 1px solid #38307a;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text {
+    position: static;
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  #homehero {
+    height: auto;
+    min-height: 220px;
+  }
+}
