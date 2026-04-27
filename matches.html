@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matches | Pickleball Match</title>
+  <link rel="stylesheet" href="pickleball.css">
+  <meta name="description" content="View upcoming pickleball matches, find games by skill level, and join matches near you.">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <header>
+      <div class="topbar">
+        <div class="logo-area">
+          <div class="logo-box">PB</div>
+          <div>
+            <h1>Pickleball Match</h1>
+            <p class="tagline">Find matches, connect with players, and stay updated</p>
+          </div>
+        </div>
+
+        <div class="top-links">
+          <a href="#">EN</a>
+          <a href="#">FR</a>
+          <a href="#">DE</a>
+          <a href="#">CN</a>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="rules.html">RULES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="matches.html">MATCHES</a></li>
+        <li><a href="players.html">PLAYERS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="main-layout">
+
+        <!-- LEFT COLUMN -->
+        <div class="left-column">
+
+          <section class="card">
+            <h2>Upcoming Matches</h2>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Skill Level</th>
+                <th>Court</th>
+              </tr>
+              <tr>
+                <td>May 3</td>
+                <td>9:00 AM</td>
+                <td>Beginner</td>
+                <td>Court 1</td>
+              </tr>
+              <tr>
+                <td>May 3</td>
+                <td>2:00 PM</td>
+                <td>Intermediate</td>
+                <td>Court 2</td>
+              </tr>
+              <tr>
+                <td>May 4</td>
+                <td>6:00 PM</td>
+                <td>Advanced</td>
+                <td>Court 3</td>
+              </tr>
+              <tr>
+                <td>May 5</td>
+                <td>7:30 AM</td>
+                <td>All Levels</td>
+                <td>Court 1</td>
+              </tr>
+            </table>
+          </section>
+
+          <section class="card">
+            <h2>Find a Match</h2>
+            <p>Select your preferences to find matches that fit your schedule.</p>
+
+            <form>
+              <label for="skill">Skill Level:</label><br>
+              <select id="skill" name="skill">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+                <option>All Levels</option>
+              </select><br><br>
+
+              <label for="time">Preferred Time:</label><br>
+              <select id="time" name="time">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select><br><br>
+
+              <input type="submit" value="Search Matches" class="button">
+            </form>
+          </section>
+
+          <section class="card">
+            <h2>Featured Match</h2>
+            <p>
+              Join our weekly community match every Saturday morning. Open to all skill
+              levels, this is a great way to meet new players and enjoy competitive,
+              friendly games.
+            </p>
+            <a href="#" class="button">Join Match</a>
+          </section>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+          <section class="side-card">
+            <h3>Match Tips</h3>
+            <ul class="side-list">
+              <li>Arrive 10 minutes early</li>
+              <li>Bring your own paddle</li>
+              <li>Warm up before playing</li>
+              <li>Stay hydrated</li>
+            </ul>
+          </section>
+
+          <section class="side-card">
+            <h3>Quick Links</h3>
+            <ul class="side-list">
+              <li><a href="#">Create a Match</a></li>
+              <li><a href="#">View Rankings</a></li>
+              <li><a href="#">Nearby Courts</a></li>
+              <li><a href="#">Community Events</a></li>
+            </ul>
+          </section>
+
+        </aside>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <a href="index.html">Home</a> |
+        <a href="rules.html">Rules</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="#">Privacy</a> |
+        <a href="#">Terms</a>
+      </p>
+      <p>
+        <a href="mailto:youremail@example.com">youremail@example.com</a>
+      </p>
+      <p>Copyright &copy; 2026 Pickleball Match</p>
+    </footer>
+
+  </div>
+</body>
+</html>
